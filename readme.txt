@@ -77,4 +77,34 @@ To compile EntoSim 2.1 you can use the Makefile in the main directory.
     - input/.SimStorage/ contains the .txt files containing the numerical output of 'Simulator' needed for the calculations
     - input/.validator contains the .txt file containing the data series for the 'Validator' QQ-plot
 
+**********************
+* How to use EntoSim *
+**********************
+
+** To start EntoSim, just open your shell, place into EntoSim-2.1/ folder and type ./entosim.x **
+
+EntoSim is organised as follows:
+
+    fittasso
+        Fit with 'Logan' function
+        Fit with 'Sharpe and De Michele' function
+        Fit with 'Briere' function
+        Fit with 'Linear' function
+        Convert your times in rates
+        Draw your rate functions in a single chart
+        Go back to EntoSim menu
+    simulator
+        Manetsch Distributed Delay Model with R(t)
+        Manetsch Distributed Delay Model with Q(t)
+        Generalized Von Foerster Equation
+        Integro-diff Von Foerster Equation
+        Go back to EntoSim menu
+    validator
+        Single comparison - Two data series
+        Multiple comparison - More data series
+        Go back to EntoSim menu
+    info
+    exit
+
+The previous map showed all the menu and submenu of EntoSim. Notice that in the main menu you have to type the function to use and press enter: for example typing 'fittasso' (without the apexes) you are selecting the fittasso option, which will open its specific menu. To select the options in each sub-menu, you have just to type the letter corresponding to the operation to do and press enter: for example typing 'a' (without apexes) in the 'fittasso' submenu, you are choosing the 'Fit with Logan function' operation.
 
