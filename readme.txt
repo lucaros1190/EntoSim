@@ -153,5 +153,67 @@ If you are running EntoSim into a local computer, replace the IP 0.0.0.0 with yo
 
 Then, to come back to EntoSim main menu, press CTRL+C.
 
+************************
+* How to use Simulator *
+************************
+
+'Simulator' provides the numerical solutions of four models to simulate insect pest life stages. The mathematical details are widely described in the publications reported at the beginning of this readme file, hence only operating instruction about EntoSim will be reported here.
+Notice that Simulator subtends that you have already estimated your development rate function parameters with Fittasso, or at least the parameter of the develoment rate function which you are going to use as input into the models.
+
+** Manetsch's Distributed Delay Model in the R(t) and Q(t) variables **
+
+The Manetsch's Distributed Delay Model in the R(t) and Q(t) variables are the first two options of 'Simulatore'. Before to begin, insert in the file input/DailyTemperatures.txt the daily average temperatures that you have measured in the insect's living environment (with a datalogger or a meteo station for example). As well as 'Fittasso', the values have to be reported in columns separated by a tab space and without any header. The first column represents the day (as integer numbers 1, 2, etc), while the second the daily average temperature values. Your file will look like:
+
+1	21.87
+2	21.95
+3	25.64
+4	27.71
+5	27.59
+6	21.88
+7	20.07
+8	20.41
+9	21.91
+10	24.07
+..  ..
+
+The other inputs are the development rate function parameters, automatically acquired from the .txt files stored in input/.RatePar-simulator/ directory, and the initial condition files:
+
+    input/InitialCondition-DDM-R.txt if you are using the Distributed Delay Model with R(t) variables
+    input/InitialCondition-DDM-Q.txt if you are using the Distributed Delay Model with Q(t) variables
+
+These files are composed by two columns separated by a tab space and without any header. The left column indicates the time variable, while the right one indicates the number of individuals (the initial cohort of eggs, for the most familiar reader). Don't care about this file: if you have some specific data you can change the file, but if you have not a standard one will be automatically generated. Your InitialCondition-DDM-R.txt or InitialCondition-DDM-Q.txt files will look like:
+
+1	0
+2	100
+3	0
+4	0
+5	0
+6	0
+7	0
+8	0
+9	0
+..  ..
+
+Once you have set the input files, type the letter corresponding to the model to use and press enter. As first request, Simulatore asks to the user which development rate function she/he wants to use, and in which temperature ranges. Notice that you can select only one specific range for each development rate function, paying attention to not overlap the subranges; moreover the subrange must be connected each other (no gaps!).
+Once selected the development rate functions, the h-value is requested to the user. Insert an integer value and press enter. At this point, Simulatore asks if the user wants the standard cohort file, or, in other words, the standard initial condition file InitialCondition-DDM-R.txt or InitialCondition-DDM-Q.txt. If you have already inserted your custom file, answer 'n' and press enter, otherwise 'y' and Simulatore will create a standard file.
+Results are  reported in two ways. Firstly, they are displayed in your internet browser (follow the instructions provided in the specific section of this readme file) in a webpage containing three tabs. The first tab contain a 3D-plot with the population density over time and through the life stages, the second tab reports a plot with an overlap of all the numerical solutions and the third tab contains multiple plots, one for each life stage.
+The numerical values, instead, are stored in output/simresults/ directory. In this folder a series of .txt files named 'h=1.txt', 'h=2.txt' etc.. contain the numerical solution of each sigle stage. These files can be copied and saved, to be used in further analyses.
+
+The 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
