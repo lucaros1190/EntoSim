@@ -1,0 +1,35 @@
+
+
+         LINEAR FIT FUNCTION: fit with linear development rate function R[T] = m*T+q
+ 
+
+Initial value setted for m =  1.0e+00
+Initial value setted for q =  1.0e+00
+
+
+  FIT RESULTS:
+
+	 **********************************************************
+
+	    Best fit parameters: 
+
+	    m =	 0.002041   +/-   0.000129
+	    q =	 -0.016315   +/-   0.003500
+
+	    ChiSquared =  0.005057
+
+	    Akaike Information Criterion (AIC) =  28.105127
+	    Bayesian Information Criterion (BIC) =  29.696709
+
+	    Coefficient of determination (R^2) =  0.815
+	    Number of degrees of freedom =  8
+
+	 **********************************************************
+
+
+
+  Created by Luca Rossini 
+
+  Universita' degli Studi della Tuscia, Viterbo
+
+

@@ -1,0 +1,14 @@
+
+
+	 VALIDATION REPORT: 
+ 
+
+  ChiSquared =  0.06710191
+  Coefficient of determination (R^2) =  0.9563
+
+
+
+  Created by Luca Rossini 
+  Universita' degli Studi della Tuscia, Viterbo
+
+

@@ -1,0 +1,55 @@
+
+
+         SharpeDeMichele FIT FUNCTION: fit with Sharpe and De Michele development rate function R[T] = T*exp([A]-([B]/T)))/(1+exp([C]-([D]/T)) + exp([E]-([F]/T)) 
+ 
+
+Initial value setted for A =  1.0e-01
+Initial value setted for B =  1.0e-01
+Initial value setted for C =  1.0e-01
+Initial value setted for D =  1.0e-01
+Initial value setted for E =  1.0e-01
+Initial value setted for F =  1.0e-01
+
+
+  FIT RESULTS:
+
+	 **********************************************************
+
+	    Best fit parameters: 
+
+	    A =  -5.7232e+00  +/-  1.8888e-01
+	    B =  6.6843e+00  +/-  5.3604e+00
+	    C =  -1.1579e+01  +/-  8.2184e+00
+	    D =  -1.6973e+02  +/-  1.2360e+02
+	    E =  -2.8493e-01  +/-  4.4015e-01
+	    F =  -1.4552e-02  +/-  1.2051e+01
+
+	    ChiSquared =  0.003965
+
+	    Akaike Information Criterion (AIC) =  34.183792
+	    Bayesian Information Criterion (BIC) =  36.571164
+
+	    Coefficient of determination (R^2) =  0.934
+	    Adjusted coeff. of determination (R^2_adj) =  0.836
+
+	    Number of degrees of freedom =  4
+
+
+	    Optimal temperature:
+
+	    T_opt =	 1.000000
+
+	    Optimal rate value R[T_opt]:
+
+	    R[T_opt] =	 0.000000
+
+	 **********************************************************
+
+
+
+  Created by Luca Rossini 
+
+  Universita' degli Studi della Tuscia, Viterbo
+
+
+

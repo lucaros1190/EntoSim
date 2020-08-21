@@ -1,0 +1,52 @@
+
+
+         LOGAN FIT FUNCTION: fit with Logan development rate funcion 
+ R[T] = [psi]*(exp([rho]*T)-exp([rho]*[T_m] - ([T_m]-T)/[Delta_T]))
+
+Initial value setted for psi =  1.0e-03
+Initial value setted for rho =  1.0e-01
+Initial value setted for T_m =  3.5e+01
+Initial value setted for Delta_T =  5.0e+00
+
+
+  FIT RESULTS:
+
+	 **********************************************************
+
+	    Best fit parameters: 
+
+	    psi =  3.9033e-03  +/-  2.2428e-03
+	    rho =  1.4145e-01  +/-  1.5742e-02
+	    T_m =  3.7688e+01  +/-  6.2134e-01
+	    Delta_T = 6.0000e+00  +/-  8.3271e-01
+
+	    ChiSquared =  0.000540
+
+	    Akaike Information Criterion (AIC) =  34.302961
+	    Bayesian Information Criterion (BIC) =  35.894542
+
+	    Coefficient of determination (R^2) =  0.992
+	    Adjusted coeff. of determination (R^2_adj) =  0.986
+
+	    Number of degrees of freedom =  6
+
+
+	    Optimal temperature:
+
+	    T_opt =	 31.182168  +/-  146.209850
+
+	    Optimal rate value R[T_opt]:
+
+	    R[T_opt] =	 0.048620  +/-  0.049996
+
+	 **********************************************************
+
+
+
+  Created by Luca Rossini 
+
+  Universita' degli Studi della Tuscia, Viterbo
+
+
+
+

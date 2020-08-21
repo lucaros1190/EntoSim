@@ -1,0 +1,51 @@
+
+
+         Briere FIT FUNCTION: fit with Briere development rate function R[T] = [a]*T*(T-[T_0])*pow(([T_L]-T), (1/[m])) 
+ 
+
+Initial value setted for a =  1.0e-03
+Initial value setted for T_L =  6.0e+00
+Initial value setted for T_M =  3.5e+01
+Initial value setted for m =  3.0e+00
+
+
+  FIT RESULTS:
+
+	 **********************************************************
+
+	    Best fit parameters: 
+
+	    a =   4.2893e-05  +/-  8.2298e-06
+	    T_L = 5.3701e+00  +/-  3.7935e+00
+	    T_M = 3.5066e+01  +/-  1.5070e+00
+	    m =   3.9730e+00  +/-  2.0408e+00
+
+	    ChiSquared =  0.000148
+
+	    Akaike Information Criterion (AIC) =  37.045573
+	    Bayesian Information Criterion (BIC) =  38.637154
+
+	    Coefficient of determination (R^2) =  0.998
+	    Adjusted coeff. of determination (R^2_adj) =  0.996
+
+	    Number of degrees of freedom =  6
+
+
+	    Optimal temperature:
+
+	    T_opt =	 32.408839  +/-  2.458850
+
+	    Optimal rate value R[T_opt]:
+
+	    R[T_opt] =	 1.825848  +/-  0.014987
+
+	 **********************************************************
+
+
+
+  Created by Luca Rossini 
+
+  Universita' degli Studi della Tuscia, Viterbo
+
+
+
