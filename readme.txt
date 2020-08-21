@@ -108,3 +108,50 @@ EntoSim is organised as follows:
 
 The previous map showed all the menu and submenu of EntoSim. Notice that in the main menu you have to type the function to use and press enter: for example typing 'fittasso' (without the apexes) you are selecting the fittasso option, which will open its specific menu. To select the options in each sub-menu, you have just to type the letter corresponding to the operation to do and press enter: for example typing 'a' (without apexes) in the 'fittasso' submenu, you are choosing the 'Fit with Logan function' operation.
 
+***********************
+* How to use Fittasso *
+***********************
+
+Fittasso is the first block of EntoSim. After its selection from the main EntoSim menu, you can fit experimental data with Logan, Briere, Sharpe and De Michele and Linear rate functions.
+First of all, open the file input/LifeTablesTimes.txt and report your data of Temperature, Development time, Temperature error, Development time error separated by a tab space and without any header. This file will looks like:
+
+15	78.17	1	4.222
+20	40.24	1	1.022
+23	29.24	1	0.474
+..  ..      ..  ..
+
+Save the changes and go back to EntoSim. Selecting the option 'e' you will convert automatically the development times in development rates, the real input needed for fitting operations (options 'a', 'b', 'c', 'd'). If you already have you data in Temperature and Development rates, you can insert the data directly into input/LifeTablesRates.txt. Also in this case you have to report the data of Temperature, Development rate, Temperature error, Development time error separated by a tab space and without any header, like:
+
+15.0	0.01279	1.0	0.00069
+20.0	0.02485	1.0	0.00063
+23.0	0.03420	1.0	0.00055
+..      ..      ..  ..
+
+Notice that the errors on the variables are mandatory, hence if you have no experimental errors, just insert '0' values in the last two columns.
+
+Once the input file is set, select the letter corresponding to the function which you wish to use and press enter. At this point, the initial values to start the minimization process are requested: answer to the question typing the values and pressing enter. Once the initial values are inserted, Fittasso asks if the user wants to limit the parameters in some specific range. This option is not mandatory: to skip just type 'n' (without apexes) and press enter, in the other case type 'y'. If 'y' option is selected, the lower and upper values of the ranges are required for each of the parameters of the development rate function selected. Insert the requested values answering to the questions and type enter.
+
+Fittasso reports the results in three ways: for a quick check best fit results and other information are printed on the shell, while a graphical representation of the best fit function overlapped to the experimental points is provided in your internet browser. Please follow the instructions on the screen for a correct visualization, or see the dedicated section in this readme file. The third report of the result is in the specific .txt file contained in output/DevelopRates. 
+More specifically:
+
+    - logratepar.txt Fit results from Logan fit, option 'a'
+    - SDMratepar.txt Fit results from Sharpe and De Michele fit, option 'b'
+    - briratepar.txt Fit results from Briere fit, option 'c'
+    - linratepar.txt Fit results from linear fit, option 'd'
+
+Sometimes it can be helpful to visualise the best fit functions and the experimental points superimposed. If you want to plot one or more best fit functions, select the option 'f' of Fittasso. Once this option is selected, Fittasso asks if the user wants to include the function in question within the plot. Answer to the question typing 'y' (without apexes) if you want to include the function, or 'n' if you do not want to include it. Notice that if you want to include a specific function within the plot, you first need to estimate its best fit parameters! These plots are, in fact, built reading the parameters stored in input/.RatePar-simulator/ !!
+
+***************************************
+* Open plots in your internet browser *
+***************************************
+
+The graphical results of EntoSim are managed by a python script, graphics.py, which uses plotly and dash packages. Once the EntoSim operation is done, follow the intruction printed on the shell:
+
+If you are running EntoSim from a remote server, replace the IP address 0.0.0.0 with your remote server IP. You can see the plots on your browser at the address: http://remote-server-ip:8080
+
+If you are running EntoSim into a local computer, replace the IP 0.0.0.0 with your local machine IP. You can see plots on your browser at the address: http://localhost:8080 or http://127.0.0.1:8080
+
+Then, to come back to EntoSim main menu, press CTRL+C.
+
+
+
