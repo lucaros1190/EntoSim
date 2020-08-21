@@ -194,16 +194,48 @@ These files are composed by two columns separated by a tab space and without any
 9	0
 ..  ..
 
+Another input file to fill before to select the model and start the simulations, is input/MortalityRates.txt. This file is composed by two columns separated by a tab space, and without any header. The first column represents the life stage, while the second one its corresponding mortality coefficient (a constant usually provided by laboratory experiments). This is just a rough estimatin of the mortality, and we hope to improve this part of EntoSim providing an analytical function in future develops. By the way, your MortalityRates.txt file should be like:
+
+1	0.10
+2	0.01
+3	0.09
+4	0.11
+5	0.07
+6	0.05
+..  ..
+
+If you do not want to consider mortality within simulations, replace the values in the right column with '0'. 
 Once you have set the input files, type the letter corresponding to the model to use and press enter. As first request, Simulatore asks to the user which development rate function she/he wants to use, and in which temperature ranges. Notice that you can select only one specific range for each development rate function, paying attention to not overlap the subranges; moreover the subrange must be connected each other (no gaps!).
 Once selected the development rate functions, the h-value is requested to the user. Insert an integer value and press enter. At this point, Simulatore asks if the user wants the standard cohort file, or, in other words, the standard initial condition file InitialCondition-DDM-R.txt or InitialCondition-DDM-Q.txt. If you have already inserted your custom file, answer 'n' and press enter, otherwise 'y' and Simulatore will create a standard file.
 Results are  reported in two ways. Firstly, they are displayed in your internet browser (follow the instructions provided in the specific section of this readme file) in a webpage containing three tabs. The first tab contain a 3D-plot with the population density over time and through the life stages, the second tab reports a plot with an overlap of all the numerical solutions and the third tab contains multiple plots, one for each life stage.
-The numerical values, instead, are stored in output/simresults/ directory. In this folder a series of .txt files named 'h=1.txt', 'h=2.txt' etc.. contain the numerical solution of each sigle stage. These files can be copied and saved, to be used in further analyses.
+The numerical values, instead, are stored in output/simresults/ directory. In this folder a series of .txt files named 'h=1.txt', 'h=2.txt' etc.. contain the numerical solution of each sigle stage. The number after 'h=' in the file names, represent the life simulated life stage, hence if the user is interested in a particular stage, she/he can recognise quickly the file of interest. These files, moreover, can be copied and saved, to be used in further analyses.
 
-The 
+The Generalised Von Foerster's equation models, the options 'c' and 'd' of Simulator, have the same requirements of the above mentioned options, 'a' and 'b'. However, another input is needed by the option 'd', the Generalised Von Foerster's equation integro-differential: the fertility rates. Fertility rates are stored into input/FertilityRates.txt and this file have to be filled in the same way of input/MortalityRates.txt. Hence, FertilityRates.txt should look like:
+
+1	0
+2	0
+3	0
+4	0
+5	0.1
+6	0
+..  ..
+
+The model in 'c' and 'd' shares the same file for the initial condition, namely input/InitialCondition-GVFE.txt: this file can be customized, if not a standard file is provided if the user answer 'y' to the specific question. The left column of this file represents the life stage, while the right one the number of individuals who are in that particular stage at the beginning of the simulation.
+Since the Generalised Von Foerster's models are partial differential equations, a boundary condition is needed, and it is stored into input/BoundaryCondition-GVFE.txt file. This file in the left column contains the time, while in the right one the temporal distribution of individuals in a particular life stage.
+
+************************
+* How to use Validator *
+************************
 
 
 
 
+
+**************
+* Logfile(s) *
+**************
+
+EntoSim has two Logfiles, located in the main directory. More specifically, the logfile of the current session is 'logfile.log', but once the user quit EntoSim, this contenent is copied into 'logfilePrevSession.log'. 
 
 
 
