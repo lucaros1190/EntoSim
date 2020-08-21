@@ -28,7 +28,7 @@ If you are not familiar with the mathematical models involved in this software, 
 5. https://doi.org/10.1016/j.ecoinf.2020.101117
 6. https://doi.org/10.1653/024.103.0217
 
-If you are using this software for scientific purposes, you can cite any of these articles. In particular, the state of art of this software is detailed in (1) and (4), while mathematical aspects are detailed in (2), (3), (5) and (6).
+If you are using EntoSim for scientific purposes, you can cite any of these articles. In particular, the state of art of EntoSim is detailed in (1) and (4), while mathematical aspects are detailed in (2), (3), (5) and (6).
 
 ****************
 * Dependencies *
