@@ -6,7 +6,7 @@
 *                                         *
 * *****************************************
 
-Readme file updated to 21 August 2020
+Readme file updated to 22 August 2020
 
 ***************************
 * Developers and contacts *
@@ -106,21 +106,21 @@ EntoSim is organised as follows:
     info
     exit
 
-The previous map showed all the menu and submenu of EntoSim. Notice that in the main menu you have to type the function to use and press enter: for example typing 'fittasso' (without the apexes) you are selecting the fittasso option, which will open its specific menu. To select the options in each sub-menu, you have just to type the letter corresponding to the operation to do and press enter: for example typing 'a' (without apexes) in the 'fittasso' submenu, you are choosing the 'Fit with Logan function' operation.
+The previous map showed all the EntoSim menu and submenu. Notice that in the main menu you have to type the function to use and press enter: for example typing 'fittasso' (without the apexes) you are selecting the fittasso option, which will open its specific menu. To select the options in each sub-menu, you have just to type the letter corresponding to the operation to do and press enter: for example typing 'a' (without apexes) in the 'fittasso' submenu, you are choosing the 'Fit with Logan function' operation.
 
 ***********************
 * How to use Fittasso *
 ***********************
 
 Fittasso is the first block of EntoSim. After its selection from the main EntoSim menu, you can fit experimental data with Logan, Briere, Sharpe and De Michele and Linear rate functions.
-First of all, open the file input/LifeTablesTimes.txt and report your data of Temperature, Development time, Temperature error, Development time error separated by a tab space and without any header. This file will looks like:
+First of all, open the file input/LifeTablesTimes.txt and report your data of Temperature, Development time, Temperature error and Development time error separated by a tab space and without any header. This file will look like:
 
 15	78.17	1	4.222
 20	40.24	1	1.022
 23	29.24	1	0.474
 ..  ..      ..  ..
 
-Save the changes and go back to EntoSim. Selecting the option 'e' you will convert automatically the development times in development rates, the real input needed for fitting operations (options 'a', 'b', 'c', 'd'). If you already have you data in Temperature and Development rates, you can insert the data directly into input/LifeTablesRates.txt. Also in this case you have to report the data of Temperature, Development rate, Temperature error, Development time error separated by a tab space and without any header, like:
+Save the changes and go back to EntoSim. Selecting the option 'e' you will convert automatically the development times in development rates, the real input needed by Fittasso for fitting operations (options 'a', 'b', 'c', 'd'). If you already have your data in Temperature and Development rates format (aldready converted), you can insert the data directly into input/LifeTablesRates.txt. Also in this case you have to report the data of Temperature, Development rate, Temperature error, Development time error separated by a tab space and without any header, like:
 
 15.0	0.01279	1.0	0.00069
 20.0	0.02485	1.0	0.00063
@@ -129,9 +129,9 @@ Save the changes and go back to EntoSim. Selecting the option 'e' you will conve
 
 Notice that the errors on the variables are mandatory, hence if you have no experimental errors, just insert '0' values in the last two columns.
 
-Once the input file is set, select the letter corresponding to the function which you wish to use and press enter. At this point, the initial values to start the minimization process are requested: answer to the question typing the values and pressing enter. Once the initial values are inserted, Fittasso asks if the user wants to limit the parameters in some specific range. This option is not mandatory: to skip just type 'n' (without apexes) and press enter, in the other case type 'y'. If 'y' option is selected, the lower and upper values of the ranges are required for each of the parameters of the development rate function selected. Insert the requested values answering to the questions and type enter.
+Once the input file is set, select the letter corresponding to the function which you wish to use and press enter. At this point, the initial values to start the minimization process are requested: answer to the question typing the values and pressing enter. Once the initial values are inserted, Fittasso asks if the user wants to limit the parameters in some specific range. This option is not mandatory: to skip it, just type 'n' (without apexes) and press enter, in the other case type 'y'. If 'y' option is selected, the lower and upper values of the ranges are required for each of the parameters of the development rate function selected. Insert the requested values answering to the questions and type enter.
 
-Fittasso reports the results in three ways: for a quick check best fit results and other information are printed on the shell, while a graphical representation of the best fit function overlapped to the experimental points is provided in your internet browser. Please follow the instructions on the screen for a correct visualization, or see the dedicated section in this readme file. The third report of the result is in the specific .txt file contained in output/DevelopRates. 
+Fittasso reports the results in three ways: for a quick check, best fit results and other information are printed on the shell, while a graphical representation of the best fit function overlapped to the experimental points is provided in your internet browser. Please follow the instructions on the screen for a correct visualization, or see the dedicated section in this readme file. The third way to store and visualize results is in the specific .txt file contained in output/DevelopRates. 
 More specifically:
 
     - logratepar.txt Fit results from Logan fit, option 'a'
@@ -145,7 +145,7 @@ Sometimes it can be helpful to visualise the best fit functions and the experime
 * Open plots in your internet browser *
 ***************************************
 
-The graphical results of EntoSim are managed by a python script, graphics.py, which uses plotly and dash packages. Once the EntoSim operation is done, follow the intruction printed on the shell:
+The graphical results of EntoSim are managed by a python script, graphics.py into the bin/ folder, which uses 'plotly' and 'dash' packages. Once the EntoSim operation is done, follow the intruction printed on the shell:
 
 If you are running EntoSim from a remote server, replace the IP address 0.0.0.0 with your remote server IP. You can see the plots on your browser at the address: http://remote-server-ip:8080
 
@@ -162,7 +162,7 @@ Notice that Simulator subtends that you have already estimated your development 
 
 ** Manetsch's Distributed Delay Model in the R(t) and Q(t) variables **
 
-The Manetsch's Distributed Delay Model in the R(t) and Q(t) variables are the first two options of 'Simulatore'. Before to begin, insert in the file input/DailyTemperatures.txt the daily average temperatures that you have measured in the insect's living environment (with a datalogger or a meteo station for example). As well as 'Fittasso', the values have to be reported in columns separated by a tab space and without any header. The first column represents the day (as integer numbers 1, 2, etc), while the second the daily average temperature values. Your file will look like:
+The Manetsch's Distributed Delay Model in the R(t) and Q(t) variables are the first two options of 'Simulatore'. Before to begin, insert into the input/DailyTemperatures.txt file the daily average temperatures that you have measured in the insect's living environment (with a datalogger or a meteo station for example). As well as 'Fittasso', the values have to be reported in columns separated by a tab space and without any header. The first column represents the day (as integer numbers: 1, 2, etc), while the second the daily average temperature values. Your file will look like:
 
 1	21.87
 2	21.95
@@ -176,12 +176,13 @@ The Manetsch's Distributed Delay Model in the R(t) and Q(t) variables are the fi
 10	24.07
 ..  ..
 
-The other inputs are the development rate function parameters, automatically acquired from the .txt files stored in input/.RatePar-simulator/ directory, and the initial condition files:
+Notice that this file is fundamental to determine the total duration (in days) of the simulation. In fact, the model's assumptions (see the related publications for major details) provide for a temperature value in input in each day. A counter into Simulatore scan the values and calculate the last day of simulation. If you want to simulate the population for more days, insert other values into DailyTemperatures.txt file on the basis, for example, of weather forecasts.
+Other inputs needed by Simulatore, are the development rate function parameters, automatically acquired from the .txt files stored in input/.RatePar-simulator/ directory, and the initial condition files:
 
     input/InitialCondition-DDM-R.txt if you are using the Distributed Delay Model with R(t) variables
     input/InitialCondition-DDM-Q.txt if you are using the Distributed Delay Model with Q(t) variables
 
-These files are composed by two columns separated by a tab space and without any header. The left column indicates the time variable, while the right one indicates the number of individuals (the initial cohort of eggs, for the most familiar reader). Don't care about this file: if you have some specific data you can change the file, but if you have not a standard one will be automatically generated. Your InitialCondition-DDM-R.txt or InitialCondition-DDM-Q.txt files will look like:
+These files are composed by two columns separated by a tab space and without any header. The left column indicates the time variable, while the right one indicates the number of individuals (the initial cohort of eggs, for the most familiar reader). Don't care about this file: if you have some specific data you can change the values into the file, otherwise a standard one will be automatically generated. Your InitialCondition-DDM-R.txt or InitialCondition-DDM-Q.txt files will look like:
 
 1	0
 2	100
@@ -206,11 +207,15 @@ Another input file to fill before to select the model and start the simulations,
 
 If you do not want to consider mortality within simulations, replace the values in the right column with '0'. 
 Once you have set the input files, type the letter corresponding to the model to use and press enter. As first request, Simulatore asks to the user which development rate function she/he wants to use, and in which temperature ranges. Notice that you can select only one specific range for each development rate function, paying attention to not overlap the subranges; moreover the subrange must be connected each other (no gaps!).
-Once selected the development rate functions, the h-value is requested to the user. Insert an integer value and press enter. At this point, Simulatore asks if the user wants the standard cohort file, or, in other words, the standard initial condition file InitialCondition-DDM-R.txt or InitialCondition-DDM-Q.txt. If you have already inserted your custom file, answer 'n' and press enter, otherwise 'y' and Simulatore will create a standard file.
-Results are  reported in two ways. Firstly, they are displayed in your internet browser (follow the instructions provided in the specific section of this readme file) in a webpage containing three tabs. The first tab contain a 3D-plot with the population density over time and through the life stages, the second tab reports a plot with an overlap of all the numerical solutions and the third tab contains multiple plots, one for each life stage.
-The numerical values, instead, are stored in output/simresults/ directory. In this folder a series of .txt files named 'h=1.txt', 'h=2.txt' etc.. contain the numerical solution of each sigle stage. The number after 'h=' in the file names, represent the life simulated life stage, hence if the user is interested in a particular stage, she/he can recognise quickly the file of interest. These files, moreover, can be copied and saved, to be used in further analyses.
+Once selected the development rate functions, the h-value is requested to the user. Insert an integer value and press enter. At this point, Simulatore asks if the user wants the 'standard cohort file', or, in other words, 'the standard initial condition' file. If you have selected the model 'a', the initial condition file is InitialCondition-DDM-R.txt, if you have selected the model 'b', the initial condition file is InitialCondition-DDM-Q.txt, as stated above. If you have already inserted your custom file, answer 'n' and press enter, otherwise 'y' and Simulatore will create a standard file.
 
-The Generalised Von Foerster's equation models, the options 'c' and 'd' of Simulator, have the same requirements of the above mentioned options, 'a' and 'b'. However, another input is needed by the option 'd', the Generalised Von Foerster's equation integro-differential: the fertility rates. Fertility rates are stored into input/FertilityRates.txt and this file have to be filled in the same way of input/MortalityRates.txt. Hence, FertilityRates.txt should look like:
+Simulatore has two ways to report simulation results. Firstly, they are displayed in your internet browser (follow the instructions provided in the specific section of this readme file) and more specifically in a webpage containing three tabs. The first tab contain a 3D-plot with the population density over time and through the life stages, the second tab reports a plot with an overlap of all the numerical solutions and the third tab contains multiple plots, one for each life stage simulated.
+The numerical values, instead, are stored in output/simresults/ directory. In this folder a series of .txt files named 'h=1.txt', 'h=2.txt' etc.. contain the numerical solution of each sigle stage. The number after 'h=' in the file names, represent the simulated life stage; hence if the user is interested in a particular stage, she/he can recognise quickly the file of interest. These files, moreover, can be copied and saved, to be used in further analyses.
+
+** The Generalised Von Foerster's equation and the Generalised Von Foerster integro-differential Equation **
+
+The Generalised Von Foerster's equation model, the options 'c' of Simulator, and the Generalised Von Foerster's integro-differential Equation, option 'd', have the same requirements of the Manetsch DDMs discussed above (options, 'a' and 'b'). Hence, take a look above, before to read this section. Mortality rates are contained into input/MortalityRates.txt.
+An additional input is required by the Generalised Von Foerster's integro-differential Equation (option 'd'): the fertility rates. Fertility rates are stored into input/FertilityRates.txt and this file have to be filled in the same way of input/MortalityRates.txt. Hence, FertilityRates.txt should look like:
 
 1	0
 2	0
@@ -220,16 +225,17 @@ The Generalised Von Foerster's equation models, the options 'c' and 'd' of Simul
 6	0
 ..  ..
 
-The model in 'c' and 'd' shares the same file for the initial condition, namely input/InitialCondition-GVFE.txt: this file can be customized, if not a standard file is provided if the user answer 'y' to the specific question. The left column of this file represents the life stage, while the right one the number of individuals who are in that particular stage at the beginning of the simulation.
-Since the Generalised Von Foerster's models are partial differential equations, a boundary condition is needed, and it is stored into input/BoundaryCondition-GVFE.txt file. This file in the left column contains the time, while in the right one the temporal distribution of individuals in a particular life stage.
+The model in 'c' and 'd' shares the same file for the initial condition, namely input/InitialCondition-GVFE.txt: this file can be customized; if not, a standard file is provided if the user answer 'y' to the specific question. The left column of this file represents the life stage, while the right one the number of individuals who are in that particular stage at the beginning of the simulation. It can be associable to a field survey where individuals are divided in age classes in a specific day.
+Since the Generalised Von Foerster's models are partial differential equations based, a boundary condition is needed. The latter is stored into input/BoundaryCondition-GVFE.txt file. This file contains the time (expressed in days) in the left column, while in the right one the number of individuals; columns are tab spaced and without any header. This file can be considered as a rough newborn profile (or an oviposition curve over time).
 
 ************************
 * How to use Validator *
 ************************
 
+Validator provides a comparison of two or more data series using the chi square and the coefficient of determination (R square) as indicators. The single validation, option 'a' of Validator, requires two input files: the first input file is input/validation/simulation.txt and it is composed by two columns tab spaced without any header. In the first column it can be reported the time variable, while on the right the simulated population. Notice that this tool can be used to compare any data series, not only populations. The first column should represent the independent variable, while the right one the dependent variable. In this context, moreover, simulation.txt represents a predicted value.
+The second input file is input/validation/validation.txt and has the same composition of simulation.txt. This file, however, should be filled with experimental data provided for example by field monitoring. A numerical value of the chi square and R square is privided as result: printed on the shell and stored in an output file output/validation/single_comparison.txt. In addition a QQ-plot is printed on your internet browser (see the graphics section for more information).
 
-
-
+The second option of Validator ('b') provides for a multiple comparison, considering also in this case the chi square and R square values. In particular, this file compares the data series contained in input/validation/validation.txt with the h-files produced by 'Simulatore' and stored in output/simresults. This option was ideated to support validation with the Distributed Delay Model(s) ('a' and 'b' options of Simulatore): for this reason the number of h files to compare with the series contained in validation.txt is requested. The output is stored into output/validation/multiple_comparison.txt: this file contains the chi square and R square values of each comparison, ordered in ascending order (on the basis of the chi square value).
 
 **************
 * Logfile(s) *
