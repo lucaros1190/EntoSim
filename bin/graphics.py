@@ -93,6 +93,8 @@ def grafico_logan():
         title='Logan development rate function fit results',
         yaxis_title='Development rate (1/d)',
         xaxis_title='Temperature (C)',
+        autosize=True,
+        height=650,
         font=dict(
             size=15
         ),
@@ -203,6 +205,8 @@ def grafico_briere():
         title='Briere development rate function fit results',
         yaxis_title='Development rate (1/d)',
         xaxis_title='Temperature (C)',
+        autosize=True,
+        height=650,
         font=dict(
             size=15
         ),
@@ -313,6 +317,8 @@ def grafico_lineare():
         title='Linear development rate function fit results',
         yaxis_title='Development rate (1/d)',
         xaxis_title='Temperature (C)',
+        autosize=True,
+        height=650,
         font=dict(
             size=15
         ),
@@ -423,6 +429,8 @@ def grafico_sdm():
         title='Sharpe and De Michele development rate function fit results',
         yaxis_title='Development rate (1/d)',
         xaxis_title='Temperature (C)',
+        autosize=True,
+        height=650,
         font=dict(
             size=15
         ),
@@ -505,6 +513,8 @@ def QQ_single_validation():
         title='QQplot: simulation vs field data',
         yaxis_title='Field data',
         xaxis_title='Simulated data - Or best fit curve',
+        autosize=True,
+        height=650,
         font=dict(
             size=15
         ),
@@ -708,6 +718,8 @@ def ratefunctionresume():
         title='Development rate functions',
         yaxis_title='Development rate (1/d)',
         xaxis_title='Temperature (C)',
+        autosize=True,
+        height=650,
         font=dict(
             size=15
         ),
@@ -745,6 +757,8 @@ def ratefunctionresume():
     app.run_server(port=port, host=host, debug=True, use_reloader=False)
     
     return
+    
+# Plot the population density surface
 
 def TreDsurf():
 
@@ -1069,3 +1083,4 @@ def SimPlotter():
     app.run_server(port=port, host=host, debug=True, use_reloader=False)
     
     return
+
