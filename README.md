@@ -28,7 +28,7 @@ To run the EntoSim v2.1 Docker container you only need:
 If you decide that your life is boring and you want to get in trouble, you can clone the repository and install all the required dependancies:
 
 * [ROOT v6.16 or later](https://root.cern/)
-* [Python 3.0 or later](https://www.python.org/ to download Python 3)
+* [Python 3.0 or later](https://www.python.org/)
 * Python 3 packages:
     * numpy
     * scipy
@@ -36,7 +36,7 @@ If you decide that your life is boring and you want to get in trouble, you can c
     * dash
     * pandas
     * dash-bootstrap-components
-* [GNU Make 3.81 or later](Visit https://www.gnu.org/software/make/)
+* [GNU Make 3.81 or later](https://www.gnu.org/software/make/)
 
 ## Docs
 * [Pipeline and Docker tutorial](https://github.com/lucaros1190/EntoSim-2.1/docs/docker_tutorial.md)
