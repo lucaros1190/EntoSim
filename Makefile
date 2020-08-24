@@ -209,3 +209,22 @@ contacts:
 	@echo "     Universita' degli Studi della Tuscia"
 	@echo "     silvia.turco@unitus.it"
 	@echo " "
+
+hide_input_folders:
+	@echo " "
+	@echo " ...Hiding input/Graphics folder..."
+	@echo " "
+	mv Graphics/ .Graphics
+	@echo " "
+	@echo " ...Hiding input/RatePar-simulator folder..."
+	@echo " "
+	mv RatePar-simulator/ .RatePar-simulator
+	@echo " "
+	@echo " ...Hiding input/SimStorage folder..."
+	@echo " "
+	mv SimStorage/ .SimStorage
+	@echo " "
+	@echo " ...Hiding input/validator folder..."
+	@echo " "
+	mv validator/ .validator
+
