@@ -39,8 +39,8 @@ If you decide that your life is boring and you want to get in trouble, you can c
 * [GNU Make 3.81 or later](https://www.gnu.org/software/make/)
 
 ## Docs
-* [Pipeline and Docker tutorial](https://github.com/lucaros1190/EntoSim-2.1/docs/docker_tutorial.md)
-* [Compile EntoSim without Docker](https://github.com/lucaros1190/EntoSim-2.1/docs/compiling.md)
+* [Pipeline and Docker tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/docker_tutorial.md)
+* [Compile EntoSim without Docker](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/compiling.md)
 
 ## Developers and contacts
 If you have suggestions, complains, if you just want to tell us how awesome we are or want to send us candies, please send us an email: [Luca](luca.rossini@unitus.it) or [Silvia](silvia.turco@unitus.it). 
