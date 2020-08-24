@@ -12,7 +12,7 @@ If Docker is alreayd installed in your system, try to run the hello-world image 
 
 1. Open a terminal:
 	* __HOST:__
-  
+	
 			$ docker pull lucaros1190/entosim:v2.1 
 
 2. Check that you succesfully download the image:
@@ -21,12 +21,15 @@ If Docker is alreayd installed in your system, try to run the hello-world image 
 			$ docker images
 
 3. If you decide you don't need EntoSim image anymore (and we would be very sad about that), you can remove it with:
- 	* __HOST:__
+	* __HOST:__
  
 			$ docker rmi lucaros1190/entosim:v2.1 
 
 ### Create your working directory
- 	* __HOST:__
+
+* __HOST:__
+		 	$ mkdir -p EntoSim/{input,output} 
+
 Create a folder, let's say /EntoSim on your local host, within you must also add two addictional folders required by EntoSim: /input and /output. 
 You may also create some input text files to be saved inside the /input folders where EntoSim is going to look for them. ** ***
 
