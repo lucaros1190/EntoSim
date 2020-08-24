@@ -13,14 +13,24 @@ If Docker is alreayd installed in your system, try to run the hello-world image 
 1. Open a terminal:
 	* __HOST:__
   
-			$ sudo docker pull lucaros1190/entosim:v2.1 
+			$ docker pull lucaros1190/entosim:v2.1 
 
 2. Check that you succesfully download the image:
 	* __HOST:__
   
-			$ sudo docker images
+			$ docker images
 
-3. If there is more than one image from the repository __biologger/speciesprimer__, you can remove the image with the <none\> Tag
+3. If you decide you don't need EntoSim image anymore (and we would be very sad about that), you can remove it with:
  	* __HOST:__
  
-			$ sudo docker rmi {image_id}
+			$ docker rmi lucaros1190/entosim:v2.1 
+
+### Create your working directory
+ 	* __HOST:__
+Create a folder, let's say /EntoSim on your local host, within you must also add two addictional folders required by EntoSim: /input and /output. 
+You may also create some input text files to be saved inside the /input folders where EntoSim is going to look for them. ** ***
+
+### Start the EntoSim container
+
+
+
