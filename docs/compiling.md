@@ -1,7 +1,6 @@
 ## EntoSim v2.1 source code
 
 If you successfully satisfied [Entosim requirements](https://github.com/lucaros1190/EntoSim-2.1/blob/master/README.md#requirements), installed ROOT and Python, you can now compile Entosim.
-Note that 
 
 ### Compiling binaries and building the executable
 1. First of all, download EntoSim repository:
