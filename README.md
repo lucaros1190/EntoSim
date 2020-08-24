@@ -24,8 +24,10 @@ If you are using EntoSim for scientific purposes, you can cite any of these arti
 To run the EntoSim v2.1 Docker container you only need:
 * Linux OS or MacOS
 * Docker version 19.03.12
+* Up to 2GB of space.
 
-If you decide that your life is boring and you want to get in trouble, you can clone the repository and install all the required dependancies:
+If you decide that your life is boring and you want to get in trouble, you can clone the repository and install all the required dependancies.
+Note that the Python packages can be also installed during [Entosim compiling](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/compiling.md).
 
 * [ROOT v6.16 or later](https://root.cern/)
 * [Python 3.0 or later](https://www.python.org/)
