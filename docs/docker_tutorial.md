@@ -52,3 +52,12 @@ For the detailed description of these files, have a look at the EntoSim Function
 * To have everything on your (and its) disposal, set /Entosim as your working directory.
 * Give your container a name and specify the Docker images you want to use.
 
+If everything worked properly, your prompt should be something like this:
+
+			[root@dockerID Entosim1]# 
+
+You are finally ready to play with your insects! Jump to [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/executable.md)		
+			
+			 
+
+
