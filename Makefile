@@ -169,7 +169,7 @@ exec.x: compiling libraries
 	@echo " Building complete: type './entosim.x' to run EntoSim"
 	@echo " "
 
-all: start_compiling compiling libraries exec.x hide_input_folders clean
+all: start_compiling compiling libraries hide_input_folders exec.x clean
 
 python.pkg:
 	@echo " "
@@ -214,17 +214,17 @@ hide_input_folders:
 	@echo " "
 	@echo " ...Hiding input/Graphics folder..."
 	@echo " "
-	mv ./input/Graphics/ .Graphics
+	mv ./input/Graphics/ ./input/.Graphics
 	@echo " "
 	@echo " ...Hiding input/RatePar-simulator folder..."
 	@echo " "
-	mv ./input/RatePar-simulator/ .RatePar-simulator
+	mv ./input/RatePar-simulator/ ./input/.RatePar-simulator
 	@echo " "
 	@echo " ...Hiding input/SimStorage folder..."
 	@echo " "
-	mv ./input/SimStorage/ .SimStorage
+	mv ./input/SimStorage/ ./input/.SimStorage
 	@echo " "
 	@echo " ...Hiding input/validator folder..."
 	@echo " "
-	mv ./input/validator/ .validator
+	mv ./input/validator/ ./input/.validator
 
