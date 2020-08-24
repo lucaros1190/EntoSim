@@ -3,11 +3,10 @@
 ### Download and install Docker
 Download [Docker](https://www.docker.com/get-docker) and
 follow the official [installation instructions](https://docs.docker.com/install/).
-If Docker is alreayd installed in your system, make sure you have the right permission to run Docker. If not, contact your SysAdmin.
-To verify that try to run the hello-world image:
+If Docker is alreayd installed in your system, try to run the hello-world image to verify that everything is working and you have the right permission to run Docker (if not, contact your SysAdmin).
 
 			$ docker run hello-world
-
+			
 
 ### Download EntoSim image from docker hub
 
