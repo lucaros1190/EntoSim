@@ -214,17 +214,17 @@ hide_input_folders:
 	@echo " "
 	@echo " ...Hiding input/Graphics folder..."
 	@echo " "
-	mv Graphics/ .Graphics
+	mv ./input/Graphics/ .Graphics
 	@echo " "
 	@echo " ...Hiding input/RatePar-simulator folder..."
 	@echo " "
-	mv RatePar-simulator/ .RatePar-simulator
+	mv ./input/RatePar-simulator/ .RatePar-simulator
 	@echo " "
 	@echo " ...Hiding input/SimStorage folder..."
 	@echo " "
-	mv SimStorage/ .SimStorage
+	mv ./input/SimStorage/ .SimStorage
 	@echo " "
 	@echo " ...Hiding input/validator folder..."
 	@echo " "
-	mv validator/ .validator
+	mv ./input/validator/ .validator
 
