@@ -169,7 +169,7 @@ exec.x: compiling libraries
 	@echo " Building complete: type './entosim.x' to run EntoSim"
 	@echo " "
 
-all: start_compiling compiling libraries exec.x clean
+all: start_compiling compiling libraries exec.x hide_input_folders clean
 
 python.pkg:
 	@echo " "
