@@ -48,7 +48,7 @@ The previous map showed all the EntoSim menu and submenu. Notice that in the mai
 ### How to use Fittasso
 Fittasso is the first block of EntoSim. After its selection from the main EntoSim menu, you can fit experimental data with Logan, Briere, Sharpe and De Michele and Linear rate functions.
 First of all, you need to create a file named LifeTablesTimes.txt to be copied inside your *input* folder, where you report data of temperature, development time, temperature error and development time error separated by a tab space and without any header. 
-There is already one in the input folder that you may modify and it looks like this:
+There is already one in the input folder that you may modify with [vi](http://ex-vi.sourceforge.net/ex.html)and it looks like this:
 
 |      |      |     |     |
 |:----:|:----:|:---:|:---:|
@@ -59,17 +59,14 @@ There is already one in the input folder that you may modify and it looks like t
 | 20   | 40.24 |  1  |1.022|
 | 23   | 29.24 |  1  |0.474|  
 
-Save the changes and go back to EntoSim. Selecting the option 'e' you will convert automatically the development times in development rates, the real input needed by Fittasso for fitting operations (options 'a', 'b', 'c', 'd'). If you already have your data in Temperature and Development rates format (aldready converted), you can insert the data directly into input/LifeTablesRates.txt. Also in this case you have to report the data of Temperature, Development rate, Temperature error, Development time error separated by a tab space and without any header, like:
-
-|      |      |     |     |
-|:--- :|:----:|:---:|:---:|
-|15.0  |0.01279|1.0|0.00069
-|20.0|0.02485|1.0|0.00063
-|23.0|0.03420|1.0|0.00055 
+Selecting the option 'e' you will convert automatically the development times in development rates, the real input needed by Fittasso for fitting operations (options 'a', 'b', 'c', 'd'). If you already have your data in Temperature and Development rates format (aldready converted), you can insert the data directly into input/LifeTablesRates.txt. Also in this case you have to report the data of Temperature, Development rate, Temperature error, Development time error separated by a tab space and without any header, as shown in the file example inside */input*.
 
 Notice that the errors on the variables are mandatory, hence if you have no experimental errors, just insert '0' values in the last two columns.
 
-Once the input file is set, select the letter corresponding to the function which you wish to use and press enter. At this point, the initial values to start the minimization process are requested: answer to the question typing the values and pressing enter. Once the initial values are inserted, Fittasso asks if the user wants to limit the parameters in some specific range. This option is not mandatory: to skip it, just type 'n' (without apexes) and press enter, in the other case type 'y'. If 'y' option is selected, the lower and upper values of the ranges are required for each of the parameters of the development rate function selected. Insert the requested values answering to the questions and type enter.
+Once the input file is set, select the letter corresponding to the function you wish to use and press enter.      
+At this point, the initial values to start the minimization process are requested: answer to the question typing the values and pressing enter.  
+Once the initial values are inserted, Fittasso asks if the user wants to limit the parameters in some specific range. This option is not mandatory: to skip it, just type 'n' (without apexes) and press enter, in the other case type 'y'.   
+If 'y' option is selected, the lower and upper values of the ranges are required for each of the parameters of the development rate function selected. Insert the requested values answering to the questions and type enter.
 
 Fittasso reports the results in three ways: for a quick check, best fit results and other information are printed on the shell, while a graphical representation of the best fit function overlapped to the experimental points is provided in your internet browser. Please follow the instructions on the screen for a correct visualization, or see the dedicated section in this readme file. The third way to store and visualize results is in the specific .txt file contained in output/DevelopRates. 
 More specifically:
@@ -79,12 +76,15 @@ More specifically:
     - briratepar.txt Fit results from Briere fit, option 'c'
     - linratepar.txt Fit results from linear fit, option 'd'
 
-Sometimes it can be helpful to visualise the best fit functions and the experimental points superimposed. If you want to plot one or more best fit functions, select the option 'f' of Fittasso. Once this option is selected, Fittasso asks if the user wants to include the function in question within the plot. Answer to the question typing 'y' (without apexes) if you want to include the function, or 'n' if you do not want to include it. Notice that if you want to include a specific function within the plot, you first need to estimate its best fit parameters! These plots are, in fact, built reading the parameters stored in input/.RatePar-simulator/ !!
+Sometimes it can be helpful to visualise the best fit functions and the experimental points superimposed.  
+If you want to plot one or more best fit functions, select the option 'f' of Fittasso. Once this option is selected, Fittasso asks if the user wants to include the function in question within the plot. Answer to the question typing 'y' (without apexes) if you want to include the function, or 'n' if you do not want to include it.  
+Notice that if you want to include a specific function within the plot, you first need to estimate its best fit parameters! These plots are, in fact, built reading the parameters stored in input/.RatePar-simulator/ !!
 
 ***************************************
 
 ### Open plots in your internet browser
-The graphical results of EntoSim are managed by a python script, graphics.py into the bin/ folder, which uses 'plotly' and 'dash' packages. Once the EntoSim operation is done, follow the intruction printed on the shell:
+The graphical results of EntoSim are managed by a python script, graphics.py into the *bin/* folder, which uses 'plotly' and 'dash' packages.  
+Once the EntoSim operation is done, follow the intruction printed on the shell:
 
 If you are running EntoSim from a remote server, replace the IP address 0.0.0.0 with your remote server IP. You can see the plots on your browser at the address: http://remote-server-ip:8080
 
@@ -94,10 +94,10 @@ Then, to come back to EntoSim main menu, press CTRL+C.
 ***************************************
 
 ### How to use Simulator
-'Simulator' provides the numerical solutions of four models to simulate insect pest life stages. The mathematical details are widely described in the publications reported at the beginning of this readme file, hence only operating instruction about EntoSim will be reported here.
+'Simulator' provides the numerical solutions of four models to simulate insect pest life stages.
 Notice that Simulator subtends that you have already estimated your development rate function parameters with Fittasso, or at least the parameter of the develoment rate function which you are going to use as input into the models.
 
-** Manetsch's Distributed Delay Model in the R(t) and Q(t) variables **
+##### Manetsch's Distributed Delay Model in the R(t) and Q(t) variables
 
 The Manetsch's Distributed Delay Model in the R(t) and Q(t) variables are the first two options of 'Simulatore'. Before to begin, insert into the input/DailyTemperatures.txt file the daily average temperatures that you have measured in the insect's living environment (with a datalogger or a meteo station for example). As well as 'Fittasso', the values have to be reported in columns separated by a tab space and without any header. The first column represents the day (as integer numbers: 1, 2, etc), while the second the daily average temperature values. Your file will look like:
 
