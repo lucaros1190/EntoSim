@@ -15,7 +15,7 @@ Inside *EntoSim-2.1* directory you will find:
     - *input/.RatePar-simulator/* contains the .txt files containing the development rate function parameters needed to run the simulations.
     - *input/.SimStorage/* contains the .txt files containing the numerical output of 'Simulator' needed for the calculations.
     - *input/.validator* contains the .txt file containing the data series for the 'Validator' QQ-plot.
-9. Notice that the hidden directories will be automatically hidden with the 'make all' command within Makefile, when you compile and build the executable of EntoSim. On this git repository they are not hidden.
+9. Notice that the hidden directories will be automatically hidden by the 'make all' command within Makefile, when you compile and build the executable of EntoSim. On this git repository they are not hidden.
 ******************************************************************************
 
 ### How to use Entosim
