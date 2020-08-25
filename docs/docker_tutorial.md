@@ -41,10 +41,10 @@ For the detailed description of these files, have a look at the EntoSim Function
  
 			$  docker run -ti --rm \
 			-p 8080:8080 \
-			-v $HOME/Entosim/input:/home/Entosim/input \ 
-			-v $HOME/Entosim/output:/home/Entosim/output \ 
-			-w /home/Entosim \
-			--name Entosim lucaros1190/entosim:v2.1 
+			-v $HOME/EntoSim/input:/home/EntoSim/input \ 
+			-v $HOME/EntoSim/output:/home/EntoSim/output \ 
+			-w /home/EntoSim \
+			--name entosim lucaros1190/entosim:v2.1 
 
 * You obviously need to run the container in an interactive mode and to remove it when you are done use the --rm option. 
 * To visualize the interactive graph generated during the simulations (and thus, to be able to reach the mighty web) you need to expose the port 8080.
