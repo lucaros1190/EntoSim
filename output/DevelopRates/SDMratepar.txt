@@ -1,55 +1,52 @@
 
-
-         SharpeDeMichele FIT FUNCTION: fit with Sharpe and De Michele development rate function R[T] = T*exp([A]-([B]/T)))/(1+exp([C]-([D]/T)) + exp([E]-([F]/T)) 
+         SharpeDeMichele FIT FUNCTION: fit a Sharpe and De Michele function of the type R[T] = T*exp([A]-([B]/T)))/(1+exp([C]-([D]/T)) + exp([E]-([F]/T)) 
  
 
-Initial value setted for A =  1.0e-01
-Initial value setted for B =  1.0e-01
-Initial value setted for C =  1.0e-01
-Initial value setted for D =  1.0e-01
-Initial value setted for E =  1.0e-01
-Initial value setted for F =  1.0e-01
+Initial value setted for A =  1.0e-03
+Initial value setted for B =  1.0e-03
+Initial value setted for C =  1.0e-03
+Initial value setted for D =  1.0e-03
+Initial value setted for E =  1.0e-03
+Initial value setted for F =  1.0e-03
 
 
   FIT RESULTS:
 
-	 **********************************************************
+	 ************************************************
 
-	    Best fit parameters: 
+	    A =	 -4.1982e+01   +/-   8.0586e-01
+	    B =	 -1.2498e+03   +/-   2.0388e+01
+	    C =	 -3.4000e+01   +/-   1.1032e+00
+	    D =	 -1.1613e+03   +/-   3.5641e+01
+	    E =	 -3.6719e+01   +/-   6.4928e-01
+	    F =	 -1.2770e+03   +/-   2.0729e+01
 
-	    A =  -5.7232e+00  +/-  1.8888e-01
-	    B =  6.6843e+00  +/-  5.3604e+00
-	    C =  -1.1579e+01  +/-  8.2184e+00
-	    D =  -1.6973e+02  +/-  1.2360e+02
-	    E =  -2.8493e-01  +/-  4.4015e-01
-	    F =  -1.4552e-02  +/-  1.2051e+01
+	    ChiSquared = 0.000123
+	    Akaike Information Criterion (AIC) =  nan
+	    Bayesian Information Criterion (BIC) =  nan
+	    Coefficient of determination (R^2) =  nan
+	    Adjusted coefficient of determination (R^2_adj) =  nan
+	    Degrees of freedom =  4
 
-	    ChiSquared =  0.003965
+    Optimal temperature:
 
-	    Akaike Information Criterion (AIC) =  34.183792
-	    Bayesian Information Criterion (BIC) =  36.571164
+	    T_opt =	 0.000000
 
-	    Coefficient of determination (R^2) =  0.934
-	    Adjusted coeff. of determination (R^2_adj) =  0.836
+    Optimal rate value R[T_opt]:
 
-	    Number of degrees of freedom =  4
+	    R[T_opt] =	 nan
 
-
-	    Optimal temperature:
-
-	    T_opt =	 1.000000
-
-	    Optimal rate value R[T_opt]:
-
-	    R[T_opt] =	 0.000000
-
-	 **********************************************************
+	 ************************************************
 
 
 
-  Created by Luca Rossini 
 
-  Universita' degli Studi della Tuscia, Viterbo
+
+
+
+		 Created by Luca Rossini 
+
+ 		 Universita' degli Studi della Tuscia, Viterbo
 
 
 
