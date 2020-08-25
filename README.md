@@ -8,9 +8,8 @@
 EntoSim is a software that fit with the idea of a fast application of mathematical models to study ectotherm populations like insects.
 It is developed to manage directly all the calculation needed from a first step of lab rearing simulation to a second step of field application, to finally ends up to a comparison and model validation. 
 All these mathematical operations and analysis are combined in a single software, with the possibility to easily add other population dynamics models, as well as other development rate functions.
-</p>
-For further reading please enjoy Luca's latest publication ( [Rossini et al. 2020](https://www.sciencedirect.com/science/article/pii/S0261219419303709) ).
-
+For further reading please enjoy [EntoSim first publication](https://www.sciencedirect.com/science/article/pii/S0261219419303709). 
+( [Rossini et al. 2020](https://www.sciencedirect.com/science/article/pii/S0261219419303709) ) has been released! 
 ### What is new
 
 We are proud to annouce that a new version of EntoSim, a ROOT-based simulator to forecast insects life cycle ( [Rossini et al. 2020](https://www.sciencedirect.com/science/article/pii/S0261219419303709) ) has been released! 
