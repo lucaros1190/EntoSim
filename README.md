@@ -46,7 +46,7 @@ Note that the Python packages can be also installed during [Entosim compiling](h
 * [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/entosim_tutorial.md)
 
 ## Developers and contacts
-If you have suggestions, complains, if you just want to tell us how awesome we are or want to send us candies, please send us an email: [Luca](luca.rossini@unitus.it) or [Silvia](silvia.turco@unitus.it). 
+If you have suggestions, complains, if you just want to tell us how awesome we are or want to send us candies, please send us an email: [Luca](mailto:luca.rossini@unitus.it) or [Silvia](mailto:silvia.turco@unitus.it). 
   
 ## Citation
 If you use this software please cite:
