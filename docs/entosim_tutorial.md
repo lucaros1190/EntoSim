@@ -49,7 +49,7 @@ The previous map showed all the EntoSim menu and submenu. Notice that in the mai
 ### How to use Fittasso
 Fittasso is the first block of EntoSim. After its selection from the main EntoSim menu, you can fit experimental data with Logan, Briere, Sharpe and De Michele and Linear rate functions.
 First of all, you need to create a file named LifeTablesTimes.txt to be copied inside your *input* folder, where you report data of temperature, development time, temperature error and development time error separated by a tab space and without any header. 
-There is already one in the input folder that you may modify with [vi](http://ex-vi.sourceforge.net/ex.html) and it looks like this:
+There is already one in the *input* folder that you may modify with [vi](http://ex-vi.sourceforge.net/ex.html) and it looks like this:
 
 |      |      |     |     |
 |:----:|:----:|:---:|:---:|
@@ -60,7 +60,7 @@ There is already one in the input folder that you may modify with [vi](http://ex
 | 20   | 40.24 |  1  |1.022|
 | 23   | 29.24 |  1  |0.474|  
 
-Selecting the option 'e' you will convert automatically the development times in development rates, the real input needed by Fittasso for fitting operations (options 'a', 'b', 'c', 'd'). If you already have your data in Temperature and Development rates format (aldready converted), you can insert the data directly into input/LifeTablesRates.txt. Also in this case you have to report the data of Temperature, Development rate, Temperature error, Development time error separated by a tab space and without any header, as shown in the file example inside */input*.
+Selecting the option 'e' you will convert automatically the development times in development rates, the real input needed by Fittasso for fitting operations (options 'a', 'b', 'c', 'd'). If you already have your data in Temperature and Development rates format (already converted), you can insert the data directly into input/LifeTablesRates.txt. Also in this case you have to report the data of Temperature, Development rate, Temperature error, Development time error separated by a tab space and without any header, as shown in the file example inside */input*.
 
 Notice that the errors on the variables are mandatory, hence if you have no experimental errors, just insert '0' values in the last two columns.
 
