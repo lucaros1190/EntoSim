@@ -1,7 +1,7 @@
 ## EntoSim tutorial
 
 ### Directories 
-Inside *EntoSim* directory you will find:
+Inside *EntoSim-2.1* directory you will find:
 
 1. *bin/* contains the EntoSim binaries
 2. *lib/* contains the EntoSim libraries
