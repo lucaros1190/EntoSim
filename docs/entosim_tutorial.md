@@ -125,7 +125,7 @@ These files are composed by two columns separated by a tab space and without any
 
 |      |      |  
 |:----:|:----:|
-| 1    |21.87|
+| 1    |0|
 |1	|0|
 |2	|100|
 |3	|0|
