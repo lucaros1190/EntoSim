@@ -6,7 +6,7 @@
 *                                         *
 * *****************************************
 
-Readme file updated to 22 August 2020
+Readme file updated to 25 August 2020
 
 ***************************
 * Developers and contacts *
@@ -64,6 +64,8 @@ To compile EntoSim 2.1 you can use the Makefile in the main directory.
 * Directories *
 ***************
 
+Inside EntoSim-2.1 directory you will find:
+
 1. bin/ contains the EntoSim binaries
 2. lib/ contains the EntoSim libraries
 3. input/ contains the .txt files required by 'Fittasso' and 'Simulator' functions within EntoSim. See the dedicated section below for more information.
@@ -76,6 +78,7 @@ To compile EntoSim 2.1 you can use the Makefile in the main directory.
     - input/.RatePar-simulator/ contains the .txt files containing the development rate function parameters needed to run the simulations
     - input/.SimStorage/ contains the .txt files containing the numerical output of 'Simulator' needed for the calculations
     - input/.validator contains the .txt file containing the data series for the 'Validator' QQ-plot
+9. Notice that the hidden directories will be automatically hidden by the 'make all' command within Makefile, when you compile and build the executable of EntoSim. On this git repository they are not hidden.
 
 **********************
 * How to use EntoSim *
@@ -113,7 +116,8 @@ The previous map showed all the EntoSim menu and submenu. Notice that in the mai
 ***********************
 
 Fittasso is the first block of EntoSim. After its selection from the main EntoSim menu, you can fit experimental data with Logan, Briere, Sharpe and De Michele and Linear rate functions.
-First of all, open the file input/LifeTablesTimes.txt and report your data of Temperature, Development time, Temperature error and Development time error separated by a tab space and without any header. This file will look like:
+First of all, you need to create a file named LifeTablesTimes.txt to be copied inside your input folder, where you report data of temperature, development time, temperature error and development time error separated by a tab space and without any header. 
+There is already one in the input folder that you may modify with 'vi' (http://ex-vi.sourceforge.net/ex.html) and it looks like this:
 
 15	78.17	1	4.222
 20	40.24	1	1.022
