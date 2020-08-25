@@ -52,7 +52,15 @@ If everything worked properly, your prompt should be something like this:
 
 			[root@dockerID EntoSim-2.1]# 
 
-You are finally ready to play with your insects! Jump to [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/entosim_tutorial.md)		
+You are finally ready to play with your insects! Jump to [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/entosim_tutorial.md)
+
+Please notice that the folder 'EntoSim-data' is just a bridge between your local machine and the container where EntoSim is running. If you need to save your outputs on your local machine, for example, just copy the output folder in EntoSim-data folder:
+
+			cp -r /home/EntoSim-2.1/output/ /home/EntoSim-data/
+
+Now, let us suppose that you want to upload a particular input file. Remember that the names of the files and the data inside need to be written "as EntoSim wants" (refer to [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/entosim_tutorial.md)). To provide an example of "upload input files" let us consider the DailyTemperatures.txt file (the operations are exactly the same, just change the input file name!). Place your edited DailyTemperatures.txt file in your local machine EntoSim-data folder ($HOME/EntoSim-data). From the container just type:
+
+			cp /home/EntoSim-data/DailyTemperatures.txt /home/Entosim-2.1/input/
 			
 			 
 
