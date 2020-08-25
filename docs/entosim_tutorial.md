@@ -49,7 +49,7 @@ The previous map showed all the EntoSim menu and submenu. Notice that in the mai
 ### How to use Fittasso
 Fittasso is the first block of EntoSim. After its selection from the main EntoSim menu, you can fit experimental data with Logan, Briere, Sharpe and De Michele and Linear rate functions.
 First of all, you need to create a file named LifeTablesTimes.txt to be copied inside your *input* folder, where you report data of temperature, development time, temperature error and development time error separated by a tab space and without any header. 
-There is already one in the input folder that you may modify with [vi](http://ex-vi.sourceforge.net/ex.html)and it looks like this:
+There is already one in the input folder that you may modify with [vi](http://ex-vi.sourceforge.net/ex.html) and it looks like this:
 
 |      |      |     |     |
 |:----:|:----:|:---:|:---:|
