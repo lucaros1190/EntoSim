@@ -15,4 +15,4 @@ If you successfully satisfied [EntoSim requirements](https://github.com/lucaros1
 * Type 'make all' to compile and build the executable
 * Type ./entosim.x to run EntoSim
  
- You are finally ready to play with your insects! Jump to [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/executable.md)
+ You are finally ready to play with your insects! Jump to [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/entosim_tutorial.md)
