@@ -9,7 +9,7 @@ If you successfully satisfied [EntoSim requirements](https://github.com/lucaros1
 
 2. To compile EntoSim 2.1 you can use the Makefile in the main directory. 
 
-* Move to the EntoSim-2.1/ directory
+* Move to the *EntoSim-2.1/* directory
 * Type 'make' to read the Makefile menu
 * Type 'make python.pkg' if you already have Python 3 installed and you need to install the required packages (see dependencies section of this readme file)
 * Type 'make all' to compile and build the executable
