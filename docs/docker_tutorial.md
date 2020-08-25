@@ -27,13 +27,12 @@ If Docker is alreayd installed in your system, try to run the hello-world image 
 			$ docker rmi lucaros1190/entosim:v2.1 
 
 ### Get ready to run EntoSim
-4. Create your working directory on your local host, let's say *yourhomefolder/EntoSim*, within you must also add two addictional folders required by the program: */input* and */output*. You are free to use any other folder name, but remember to change it in the rest of the pipeline accordingly.
+4. Create your working directory on your local host, let's say *yourhomefolder/EntoSim-data*. This folder is required to transfer your personal input and output data from and to the container. Once you have added files, you can copy into the specific folders, as explained in the [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/entosim_tutorial.md). You are free to use any other folder name, but remember to change it in the rest of the pipeline accordingly.
 	* __HOST:__
  
-			$ mkdir -p EntoSim/{input,output} 
+			$ mkdir -p EntoSim-data/ 
 
-5. You may also create some input text files to be saved inside the */input* folder, where EntoSim is going to look for when needed.
-For the detailed description of these files, have a look at the EntoSim Functions below.
+5. Don't forget that this folder is just a bridge from your local machine and EntoSim container. Once you have placed your input data inside, for instance, you should copy them in EntoSim-2.1/input/ folder, paying attention to the names and formattation. For the detailed description of the input/output files, have a look at the EntoSim Functions below.
 
 ### Start the EntoSim container
 6. Let's start this adventure by typing:
@@ -41,20 +40,17 @@ For the detailed description of these files, have a look at the EntoSim Function
  
 			$  docker run -ti --rm \
 			-p 8080:8080 \
-			-v $HOME/EntoSim/input:/home/EntoSim/input \ 
-			-v $HOME/EntoSim/output:/home/EntoSim/output \ 
-			-w /home/EntoSim \
+			-v $HOME/EntoSim-data:/home/EntoSim-data \ 
 			--name entosim lucaros1190/entosim:v2.1 
 
 * You obviously need to run the container in an interactive mode and to remove it when you are done use the --rm option. 
 * To visualize the interactive graph generated during the simulations (and thus, to be able to reach the mighty web) you need to expose the port 8080.
 * To mount the folders you created in the previous step, use the -v command. Note that you are free to change these paths, but then don't go to mommy to cry. "With great freedom comes great responsibility".
-* To have everything on your (and its) disposal, set */Entosim* as your working directory.
 * Give your container a name and specify the Docker images you want to use.
 
 If everything worked properly, your prompt should be something like this:
 
-			[root@dockerID Entosim1]# 
+			[root@dockerID EntoSim-2.1]# 
 
 You are finally ready to play with your insects! Jump to [EntoSim tutorial](https://github.com/lucaros1190/EntoSim-2.1/blob/master/docs/entosim_tutorial.md)		
 			
