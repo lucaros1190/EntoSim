@@ -1,12 +1,12 @@
 # EntoSim v2.1
 
 ### Introduction
-EntoSim description 
+ 
 
 ### What is new
 
 We are proud to annouce that a new version of EntoSim, a ROOT-based simulator to forecast insects life cycle ( [Rossini et al. 2020](https://www.sciencedirect.com/science/article/pii/S0261219419303709) ) has been released! 
-You can now visualize your simulations on your local browers just by running the EntoSim Docker container without any further installation.
+You can now visualize your simulations on your local browsers just by running the EntoSim Docker container without any further installation.
 
 ### Background information
 If you are not familiar with the mathematical models involved in this software, you can find all the information in the following publications:
