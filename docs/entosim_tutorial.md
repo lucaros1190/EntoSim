@@ -50,20 +50,22 @@ Fittasso is the first block of EntoSim. After its selection from the main EntoSi
 First of all, you need to create a file named LifeTablesTimes.txt to be copied inside your *input* folder, where you report data of temperature, development time, temperature error and development time error separated by a tab space and without any header. 
 There is already one in the input folder that you may modify and it looks like this:
 
-| ---- |:----:|:---:| --- |
-| 15   | 78.17 |  1  |4.222|
+|      |      |     |     |
+|:----:|:----:|:---:|:---:|
+|  15  | 78.17 |  1  |4.222|
 | 20   | 40.24 |  1  |1.022|
 | 23   | 29.24 |  1  |0.474| 
 | 15   | 78.17 |  1  |4.222|
 | 20   | 40.24 |  1  |1.022|
-| 23   | 29.24 |  1  |0.474| 
+| 23   | 29.24 |  1  |0.474|  
 
 Save the changes and go back to EntoSim. Selecting the option 'e' you will convert automatically the development times in development rates, the real input needed by Fittasso for fitting operations (options 'a', 'b', 'c', 'd'). If you already have your data in Temperature and Development rates format (aldready converted), you can insert the data directly into input/LifeTablesRates.txt. Also in this case you have to report the data of Temperature, Development rate, Temperature error, Development time error separated by a tab space and without any header, like:
 
-15.0	0.01279	1.0	0.00069
-20.0	0.02485	1.0	0.00063
-23.0	0.03420	1.0	0.00055
-..      ..      ..  ..
+|      |      |     |     |
+|:--- :|:----:|:---:|:---:|
+|15.0  |0.01279|1.0|0.00069
+|20.0|0.02485|1.0|0.00063
+|23.0|0.03420|1.0|0.00055 
 
 Notice that the errors on the variables are mandatory, hence if you have no experimental errors, just insert '0' values in the last two columns.
 
