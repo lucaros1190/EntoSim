@@ -1,7 +1,7 @@
 # EntoSim v2.1
 
 ### Introduction
- EntoSim is a software born to allow the application and validation of mathematical models to describe ectotherm populations. Usually this operation can be divided in three phases: the first phase provides for the rearing of insects at different constant temperatures, the second one is the model application in a field environment, and the third one is its validation. Each phase requires different mathematical operations and analyses, and if you are lazy like us, you do not want to use different software for different operations.
+ EntoSim is a software born to allow the application and validation of mathematical models to describe ectotherm populations, mainly insects. Usually this operation can be divided in three phases: the first phase provides for the rearing of insects at different constant temperatures, the second one is the model application in a field environment, and the third one is its validation. Each phase requires different mathematical operations and analyses, and if you are lazy like us, you do not want to use different software for different operations.
 EntoSim fit with the idea of a fast application of mathematical models managing directly all the calculation needed from the laboratory to the field. Its structure was thought to easily add other population dynamics models, as well as other development rate functions to fit experimental data from lab rearing.
 If you have ideas, suggestions or requests, you're welcome in your family!
 
