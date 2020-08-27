@@ -57,5 +57,6 @@ If you have suggestions, complains, if you just want to tell us how awesome we a
 ## Citation
 If you use this software please cite:
 
-	 The latest manuscript is in progress. For the moment, please refer to the literature indicated at the beginning of this readme file.
+	 The latest manuscript is in progress. For the moment, please refer 
+	 to the literature indicated at the beginning of this readme file.
 
