@@ -57,5 +57,5 @@ If you have suggestions, complains, if you just want to tell us how awesome we a
 ## Citation
 If you use this software please cite:
 
-	 Rossini L, Turco S. EntoSim 2.1 (Manuscript in progress)
+	 The latest manuscript is in progress. For the moment, please refer to the literature indicated at the beginning of this readme file.
 
