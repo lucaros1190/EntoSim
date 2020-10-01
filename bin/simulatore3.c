@@ -275,7 +275,7 @@ avanti3:
     // Ask the array of the boundary condition - If not a standard will be created
     
     clear();
-    printf("%s", "\n Do you want the standard boundary condition, (say 'n' if you have previous monitoring) y/n \n\n");
+    printf("%s", "\n Do you want the standard boundary condition? (say 'n' if you have previous monitoring) y/n \n");
     scanf("%c", &monitoring_risp);
     
     if(monitoring_risp == 'y'){
