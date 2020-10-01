@@ -25,7 +25,7 @@ If you are not familiar with the mathematical models involved in this software, 
 6. [A Modelling Approach to Describe the Anthonomus eugenii (Coleoptera: Curculionidae) Life Cycle in Plant Protection: A Priori and a Posteriori Analysis.](https://bioone.org/journals/florida-entomologist/volume-103/issue-2/024.103.0217/A-Modelling-Approach-to-Describe-the-Anthonomus-eugenii-Coleoptera/10.1653/024.103.0217.full)
 7. [Reformulation of the Distributed Delay Model to describe insect pest populations using count variables.](https://doi.org/10.1016/j.ecolmodel.2020.109286)
 
-If you are using EntoSim for scientific purposes, you can cite any of these articles. In particular, the state of art of EntoSim is detailed in (1) and (4), while mathematical aspects are detailed in (2), (3), (5) and (6).
+If you are using EntoSim for scientific purposes, you can cite any of these articles. In particular, the state of art of EntoSim is detailed in (1) and (4), while mathematical aspects are detailed in (2), (3), (5), (6) and (7).
 
 ## Requirements
 To run the EntoSim v2.1 Docker container you only need:
