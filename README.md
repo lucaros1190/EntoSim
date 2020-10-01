@@ -23,6 +23,7 @@ If you are not familiar with the mathematical models involved in this software, 
 4. [EntoSim, a ROOT-based simulator to forecast insects’ life cycle: Description and application in the case of Lobesia botrana.](https://www.sciencedirect.com/science/article/pii/S0261219419303709?via%3Dihub)
 5. [Distributed Delay Model and Von Foerster's equation: Different points of view to describe insects' life cycles with chronological age and physiological time.](https://www.sciencedirect.com/science/article/pii/S1574954120300674?via%3Dihub)
 6. [A Modelling Approach to Describe the Anthonomus eugenii (Coleoptera: Curculionidae) Life Cycle in Plant Protection: A Priori and a Posteriori Analysis.](https://bioone.org/journals/florida-entomologist/volume-103/issue-2/024.103.0217/A-Modelling-Approach-to-Describe-the-Anthonomus-eugenii-Coleoptera/10.1653/024.103.0217.full)
+7. [Reformulation of the Distributed Delay Model to describe insect pest populations using count variables.](https://doi.org/10.1016/j.ecolmodel.2020.109286)
 
 If you are using EntoSim for scientific purposes, you can cite any of these articles. In particular, the state of art of EntoSim is detailed in (1) and (4), while mathematical aspects are detailed in (2), (3), (5) and (6).
 
