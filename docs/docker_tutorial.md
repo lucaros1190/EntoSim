@@ -38,10 +38,7 @@ If Docker is already installed in your system, try to run the hello-world image 
 6. Let's start this adventure by typing:
 	* __HOST:__
  
-			$  docker run -ti --rm \
-			-p 8080:8080 \
-			-v $HOME/EntoSim-data:/home/EntoSim-data \ 
-			--name entosim lucaros1190/entosim:v2.1 
+			$  docker run -ti --rm -p 8080:8080 -v your_local_directory_path:/home/EntoSim-2.1/EntoSim-data lucaros1190/entosim:v2.1 
 
 * You obviously need to run the container in an interactive mode and to remove it when you are done use the --rm option. 
 * To visualize the interactive graph generated during the simulations (and thus, to be able to reach the mighty web) you need to expose the port 8080.
