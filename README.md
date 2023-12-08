@@ -56,9 +56,7 @@ Note that the Python packages can be also installed during [Entosim compiling](h
 If you have suggestions, complains, if you just want to tell us how awesome we are or want to send us candies, please send us an email: [Luca](mailto:luca.rossini@unitus.it) or [Silvia](mailto:silvia.turco@unitus.it). 
   
 ## Citation
-If you use this software please cite:
+* [EntoSim, a ROOT-based simulator to forecast insects’ life cycle: Description and application in the case of Lobesia botrana.](https://www.sciencedirect.com/science/article/pii/S0261219419303709?via%3Dihub)
+* [Entosim, an insects life cycle simulator enclosing multiple models in a docker container](https://doi.org/10.30638/eemj.2021.159)
 
-	 The latest manuscript is in progress. For the moment, please refer 
-	 to the literature indicated at the beginning of this readme file
-	 into the "Background Information" section.
 
